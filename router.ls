@@ -6,3 +6,5 @@ module.exports = r
 
 r.get '/' (req, res) ->
   res.json message: 'Hello, Moriarty!'
+
+r.post '/publish/:account/:project'

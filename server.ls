@@ -17,4 +17,4 @@ app.use '/api' router
 app.listen port, '127.0.0.1'
 
 console.log "Server running on port #{port}\n" +
-            "Hit ctrl+c to stop it"
+            "Hit control+c to stop it.\n"
