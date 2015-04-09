@@ -1,7 +1,11 @@
-require! <[ express body-parser ./router ]>
+require! <[
+  express
+  body-parser
+  ./router
+]>
 
-app     = express!
-port    = process.env.PORT || 3000
+app   = express!
+port  = process.env.PORT || 3000
 
 allow-cors = (req, res, next) ->
   res.header 'Access-Control-Allow-Origin'  '*'
