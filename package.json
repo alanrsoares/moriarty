@@ -9,9 +9,7 @@
     "react": "^0.13.1",
     "react-tap-event-plugin": "^0.1.6"
   },
-  "devDependencies": {
-    "awsbox": "^0.7.0"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
