@@ -1,0 +1,26 @@
+{
+  "name": "moriarty",
+  "version": "0.1.0",
+  "description": "A versionable and manageable CDN",
+  "main": "index.js",
+  "dependencies": {
+    "flummox": "^3.5.1",
+    "material-ui": "^0.7.3",
+    "react": "^0.13.1",
+    "react-tap-event-plugin": "^0.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alanrsoares/moriarty.git"
+  },
+  "author": "github.com/alanrsoares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alanrsoares/moriarty/issues"
+  },
+  "homepage": "https://github.com/alanrsoares/moriarty"
+}
