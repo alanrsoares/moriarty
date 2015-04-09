@@ -5,4 +5,4 @@ r = express.Router!
 module.exports = r
 
 r.get '/' (req, res) ->
-  res.json { message: 'Hello, David' }
+  res.json message: 'Hello, David'

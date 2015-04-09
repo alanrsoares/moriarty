@@ -2,16 +2,11 @@ require! <[
   express
   body-parser
   ./router
+  ./allow-cors
 ]>
 
 app   = express!
-port  = process.env.PORT || 3000
-
-allow-cors = (req, res, next) ->
-  res.header 'Access-Control-Allow-Origin'  '*'
-  res.header 'Access-Control-Allow-Headers' 'Content-Type'
-  res.header 'Access-Control-Allow-Methods' 'GET,PUT,POST,DELETE'
-  next!
+port  = process.env.PORT or 3000
 
 # configure middleware
 app.use body-parser.urlencoded extended: true
