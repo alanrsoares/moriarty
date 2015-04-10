@@ -8,4 +8,4 @@ r.get '/' (req, res) ->
   res.json message: 'Hello, Moriarty!'
 
 r.get '/key' (req, res) ->
-  res.send process.env.AWS_ID or 'not found' 
+  res.json key: process.env.['AWS_ID'] or 'not found'
