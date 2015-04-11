@@ -1,4 +1,7 @@
-require! <[ express ]>
+require! {
+  express
+  './aws-credentials'
+}
 
 r = express.Router!
 
@@ -8,4 +11,4 @@ r.get '/' (req, res) ->
   res.json message: 'Hello, Moriarty!'
 
 r.get '/key' (req, res) ->
-  res.json key: process.env['AWS_ID'] or 'not found'
+  res.json id: aws-credentials.id
