@@ -1,5 +1,4 @@
-AWS_ID     = process.env.AWS_ID
-AWS_SECRET = process.env.AWS_SECRET
+{ AWS_ID, AWS_SECRET } = process.env
 
 module.exports = do
   id: AWS_ID
