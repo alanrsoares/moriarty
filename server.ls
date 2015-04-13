@@ -1,12 +1,15 @@
 require! <[
-  express
   body-parser
+  express
   ./router
   ./allow-cors
 ]>
 
-app   = express!
-port  = process.env.PORT or 3000
+PORT  = process.env.PORT or 3000
+
+app   = require('express')!
+http  = require('http').Server app
+io    = require('socket.io') http
 
 # configure middleware
 app.use body-parser.urlencoded extended: true
@@ -14,7 +17,6 @@ app.use body-parser.json!
 app.use allow-cors
 app.use '/api' router
 
-app.listen port, '127.0.0.1'
-
-console.log "Server running on port #{port}\n" +
-            "Hit control+c to stop it.\n"
+http.listen PORT, ->
+  console.log "Server running on port #{PORT}\n" +
+              "Hit control+c to stop it.\n"
