@@ -17,6 +17,6 @@ app.use body-parser.json!
 app.use allow-cors
 app.use '/api' router
 
-http.listen PORT, ->
+http.listen PORT, '127.0.0.1', ->
   console.log "Server running on port #{PORT}\n" +
               "Hit control+c to stop it.\n"
