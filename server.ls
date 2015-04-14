@@ -12,9 +12,7 @@ app   = require('express')!
 http  = require('http').Server app
 io    = require('socket.io') http
 
-init!
-
-function init
+do function init
   init-middleware!
   init-listener!
   init-io!
